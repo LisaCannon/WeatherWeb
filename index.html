@@ -1,0 +1,124 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+      <meta charset='utf-8'>
+      <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+      <title>WeatherWeb</title>
+      <meta name='viewport' content='width=device-width, initial-scale=1'>
+      <link rel="stylesheet" href="reset.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="style.css">
+      <script src='main.js'></script>
+      <!-- <style>
+            .ww-container-background {
+                background-color: rgba(0, 102, 255, 0.212);
+                }
+            .ww-home {
+                font-size: 30px;
+                text-align: left;
+                background-color: rgba(0, 102, 255, 0.938);
+            }
+            .ww-nav {
+                font-size:16px; 
+            }
+            .ww-row1 {
+                background-color: white;
+                padding-bottom: 30px;
+            }
+            h3 {
+                color: rgba(0, 102, 255, 0.938);
+                padding-bottom: 50px;
+            }
+            .ww-row2 {
+                padding: 50px;
+            }
+            .ww-content-col1 {
+                background-color: white;
+                padding: 30px;
+            }
+            .ww-content-col2 {
+                background-color: white;
+                padding: 10px;
+            }
+            .img-full {
+                padding: 30px;
+            }
+            .img-smaller {
+                padding: 5px;
+            }
+        </style> -->
+  </head>
+  <body>
+      <div class = "container ww-container-background">
+          <!-- This is the navigation header that will be on every page. -->
+          <div class = "row ww-row1">
+              <div class = "col-md-2">
+                    <a class = "btn btn-primary ww-home" href = "#" role = "button">WeatherWeb</a>
+              </div>
+              <div class = "col-md-7"></div>
+              <div class = "col-md-3">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light ww-nav">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Plots
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item ww-nav-menu" href="#">Temperature</a>
+                                        <a class="dropdown-item ww-nav-menu" href="#">Humidity</a>
+                                        <a class="dropdown-item ww-nav-menu" href="#">Cloudiness</a>
+                                        <a class="dropdown-item ww-nav-menu" href="#">Wind Speed</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item active">
+                                  <a class="nav-link" href="#">Comparison <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">Data</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+              </div>
+          </div>
+          <div class = "row ww-row2">
+              <!-- Summary information about the study  -->
+              <div class = "col-md-7 ww-content-col1 float-left">
+                  <h3>Summary: Latitude vs X</h3>
+                  <img class = "img-full" width = "50%" src = "https://github.com/LisaCannon/PythonAPIs/blob/master/Instructions/starter_code/City%20Latitude%20vs%20Max%20Temperature%20Polynomial%20Regression%20Fit.png?raw=true">
+                  
+                  <section>
+                    <p>
+                        Is latitudinal location an indicator of certain weather conditions?  Locations close to the equater, Latitude are thought to be hotter.  Tropical vacation destinations come to mind, suggesting maybe locations closer to the equator are more cloudy and humid.  The purpose of this study is to determine whether Latitude has a relationship with weather conditions. Weather conditions investigated here include temperaure, humidity, cloudiness, and wind speed.    
+                    </p>
+                    <br>
+                    <p>
+                        The results of the study suggest that there is a strong quadratic relationship between temperature and latitude.  Temperatures are hotter near the center of the globe and cooler towards the poles.  The peak of this trend is not at the equator, as predicted, but instead about 15&deg; north of the equator.
+   
+                    </p>
+                    <p>
+                        There was no detectible relationship with latitude and humidity, cloudiness, or wind speed.  Those weather conditions seam to be uniformly distributed across at measures of latitude.
+                    </p>
+                </section>
+              </div>
+              <div class = "col-md-1"></div>
+              <!-- This is the visualization block at the right side of most pages. -->
+              <div class = "col-md-4 ww-content-col2">
+                    <h3>Visualizations</h3>
+                    <hr>
+                    <img class = "img-smaller" width = "45%" src = "https://github.com/LisaCannon/PythonAPIs/blob/master/Instructions/starter_code/City%20Latitude%20vs%20Max%20Temperature%20Polynomial%20Regression%20Fit.png?raw=true">
+                    <img class = "img-smaller" width = "45%" src = "https://github.com/LisaCannon/PythonAPIs/blob/master/Instructions/starter_code/City%20Latitude%20vs%20Cloudiness.png?raw=true">
+                    <br>
+                    <img class = "img-smaller" width = "45%" src = "https://github.com/LisaCannon/PythonAPIs/blob/master/Instructions/starter_code/City%20Latitude%20vs%20Humidity,%20Outlier%20Removed.png?raw=true">
+                    <img class = "img-smaller" width = "45%" src = "https://github.com/LisaCannon/PythonAPIs/blob/master/Instructions/starter_code/City%20Latitude%20vs%20Wind%20Speed.png?raw=true"> 
+    
+              </div>
+            </div>
+            <div class = "row">
+
+            </div>
+      </div>
+    
+  </body>
+  </html>
