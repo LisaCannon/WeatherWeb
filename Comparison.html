@@ -7,81 +7,73 @@
       <meta name='viewport' content='width=device-width, initial-scale=1'>
       <link rel="stylesheet" href="reset.css">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="style.css">
       <script src='main.js'></script>
-      <style>
-            .ww-home {
-                font-size: 30px;
-                text-align: left;
-            }
-            .ww-nav {
-                font-size:16px; 
-            }
-            .ww_row1 {
-                background-color: lightblue;
-            }
-            /* .small-graphs {
-                max-width: 10%;
-                max_height: 10%;
-            } */
-        </style>
+   
   </head>
-  <body>
+  <body class = "body-color">
       <div class = "container">
-          <div class = "row ww-row1">
-              <div class = "col-md-2">
-                    <a class = "btn btn-primary ww-home" href = "#" role = "button">WeatherWeb</a>
-              </div>
-              <div class = "col-md-7"></div>
-              <div class = "col-md-3">
-                    <nav class="navbar navbar-expand-lg navbar-light bg-light ww-nav">
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav mr-auto">
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Plots
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">Action</a>
-                                        <a class="dropdown-item" href="#">Another action</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Something else here</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item active">
-                                  <a class="nav-link" href="#">Comparison <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link" href="#">Data</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-              </div>
-          </div>
-          <div class = "row">
+            <div class = "row ww-row1">
+                    <div class = "col-md-2">
+                          <a class = "btn btn-primary ww-home" href = "#" role = "button">WeatherWeb</a>
+                    </div>
+                    <div class = "col-md-7"></div>
+                    <div class = "col-md-3">
+                          <nav class="navbar navbar-expand-lg navbar-light bg-light ww-nav">
+                              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                  <ul class="navbar-nav mr-auto">
+                                      <!-- <li class="nav-item active">
+                                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                      </li> -->
+                                      <li class="nav-item dropdown">
+                                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                              Plots
+                                          </a>
+                                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                              <a class="dropdown-item ww-nav-menu" href="#">Temperature</a>
+                                              <a class="dropdown-item ww-nav-menu" href="#">Humidity</a>
+                                              <a class="dropdown-item ww-nav-menu" href="#">Cloudiness</a>
+                                              <a class="dropdown-item ww-nav-menu" href="#">Wind Speed</a>
+                                          </div>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link" href="#">Comparison</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link" href="#">Data</a>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </nav>
+                    </div>
+                </div>
+          <div class = "row ww-row2 ww-content">
               <div class = "col">
                 <h3>Comparison</h3> 
               </div>
           </div>
-          <div class = "row">
+          <div class = "row white-background">
               <div class = "col">
                   <p>Click on an image to see more detail.</p>
               </div>
           </div>
-          <div class = "row">
+          <div class = "row ww-content">
                 <div class="col">
-                    <img src = "https://github.com/LisaCannon/PythonAPIs/blob/master/Instructions/starter_code/City%20Latitude%20vs%20Max%20Temperature%20Polynomial%20Regression%20Fit.png?raw=true">
+                    <h4>Latitude vs Temperature</h4>
+                    <img alt="scatter plot of latitude versus temperature with a polynomial fit" width= "40%" src = "https://github.com/LisaCannon/PythonAPIs/blob/master/Instructions/starter_code/City%20Latitude%20vs%20Max%20Temperature%20Polynomial%20Regression%20Fit.png?raw=true">
                 </div>
                 <div class="col">
-                    <img  src = "https://github.com/LisaCannon/PythonAPIs/blob/master/Instructions/starter_code/City%20Latitude%20vs%20Cloudiness.png?raw=true">
+                    <h4>Latitude vs Cloudiness</h4>
+                    <img  alt = "scatter plot of latitude versus cloudiness" width= "40%" src = "https://github.com/LisaCannon/PythonAPIs/blob/master/Instructions/starter_code/City%20Latitude%20vs%20Cloudiness.png?raw=true">
                 </div>
                 <div class="w-100"></div>
                 <div class="col">
-                    <img src = "https://github.com/LisaCannon/PythonAPIs/blob/master/Instructions/starter_code/City%20Latitude%20vs%20Humidity,%20Outlier%20Removed.png?raw=true">
+                    <h4>Latitude vs Humidity</h4>
+                    <img alt = "scatter plot of latitude versus humidity" src = "https://github.com/LisaCannon/PythonAPIs/blob/master/Instructions/starter_code/City%20Latitude%20vs%20Humidity,%20Outlier%20Removed.png?raw=true">
                 </div>
                 <div class="col">
-                    <img src = "https://github.com/LisaCannon/PythonAPIs/blob/master/Instructions/starter_code/City%20Latitude%20vs%20Wind%20Speed.png?raw=true"> 
+                    <h4>Latitude vs Wind Speed</h4>
+                    <img alt = "scatter plot of latitude versus wind speed" src = "https://github.com/LisaCannon/PythonAPIs/blob/master/Instructions/starter_code/City%20Latitude%20vs%20Wind%20Speed.png?raw=true"> 
     
                 </div>
             </div>

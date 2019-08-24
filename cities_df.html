@@ -7,53 +7,60 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <script src='main.js'></script>
 </head>
-<body>
+<body class = "body-color">
   <div class = "container">
-    <div class = "row ww-row1">
-        <div class = "col-md-2">
-              <a class = "btn btn-primary ww-home" href = "#" role = "button">WeatherWeb</a>
-        </div>
-        <div class = "col-md-7"></div>
-        <div class = "col-md-3">
-              <nav class="navbar navbar-expand-lg navbar-light bg-light ww-nav">
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                      <ul class="navbar-nav mr-auto">
-                          <li class="nav-item dropdown">
-                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Plots
-                              </a>
-                              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                  <a class="dropdown-item" href="#">Action</a>
-                                  <a class="dropdown-item" href="#">Another action</a>
-                                  <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="#">Something else here</a>
-                              </div>
-                          </li>
-                          <li class="nav-item active">
-                            <a class="nav-link" href="#">Comparison <span class="sr-only">(current)</span></a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">Data</a>
-                          </li>
-                      </ul>
-                  </div>
-              </nav>
-        </div>
-    </div>
-    <div class = "row"> 
+          <!-- This is the navigation header that will be on every page. -->
+          <div class = "row ww-row1 white-background">
+              <div class = "col-md-2">
+                    <a class = "btn btn-primary ww-home" href = "#" role = "button">WeatherWeb</a>
+              </div>
+              <div class = "col-md-7"></div>
+              <div class = "col-md-3">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light ww-nav">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <!-- <li class="nav-item active">
+                                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                </li> -->
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Plots
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item ww-nav-menu" href="#">Temperature</a>
+                                        <a class="dropdown-item ww-nav-menu" href="#">Humidity</a>
+                                        <a class="dropdown-item ww-nav-menu" href="#">Cloudiness</a>
+                                        <a class="dropdown-item ww-nav-menu" href="#">Wind Speed</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">Comparison</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">Data</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+              </div>
+          </div>
+    <!-- Page Title  -->
+    <div class = "row white-background"> 
       <div class  = "col">
         <h3>Data</h3>
+        <hr>
       </div>
     </div>
-    <div class = "row">
+    <div class = "row white-background">
       <div class = "col">
        <p><small> The following table contains all of the data used for plotting during this project.</small></p>
       </div>
     </div>
-    <div class = "row">
+    <!-- table of data used in analysis  -->
+    <div class = "row white-background">
       <div class = "col">
           <table border="1" class="dataframe table table-striped">
               <thead>
@@ -6324,8 +6331,16 @@
                   <td>0</td>
                 </tr>
               </tbody>
-            </table>
+          </table>
       </div>
+    </div>
+    <!-- Footer for every page  -->
+    <div class = "row ww-footer">
+        <nav class="navbar">
+            <span class="navbar-text">
+                Latitude weather analysis by Lisa Cannon. 
+            </span>
+        </nav>
     </div>
   </div>
 </body>

@@ -7,83 +7,79 @@
       <meta name='viewport' content='width=device-width, initial-scale=1'>
       <link rel="stylesheet" href="reset.css">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="style.css">
       <script src='main.js'></script>
-      <style>
-            .ww-home {
-                font-size: 30px;
-                text-align: left;
-            }
-            .ww-nav {
-                font-size:16px; 
-            }
-            .ww_row1 {
-                background-color: lightblue;
-            }
-            /* .small-graphs {
-                max-width: 10%;
-                max_height: 10%;
-            } */
-        </style>
+
   </head>
-  <body>
+  <body class = "body-color">
       <div class = "container">
-          <div class = "row ww-row1">
-              <div class = "col-md-2">
+        <!-- This is the navigation header that will be on every page. -->
+        <div class = "row ww-row1">
+                <div class = "col-md-2">
                     <a class = "btn btn-primary ww-home" href = "#" role = "button">WeatherWeb</a>
-              </div>
-              <div class = "col-md-7"></div>
-              <div class = "col-md-3">
+                </div>
+                <div class = "col-md-7"></div>
+                <div class = "col-md-3">
                     <nav class="navbar navbar-expand-lg navbar-light bg-light ww-nav">
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mr-auto">
+                                <!-- <li class="nav-item active">
+                                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                </li> -->
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         Plots
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">Action</a>
-                                        <a class="dropdown-item" href="#">Another action</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <a class="dropdown-item ww-nav-menu" href="#">Temperature</a>
+                                        <a class="dropdown-item ww-nav-menu" href="#">Cloudiness</a>
+                                        <a class="dropdown-item ww-nav-menu" href="#">Humidity</a>
+                                        <a class="dropdown-item ww-nav-menu" href="#">Wind Speed</a>
                                     </div>
                                 </li>
-                                <li class="nav-item active">
-                                  <a class="nav-link" href="#">Comparison <span class="sr-only">(current)</span></a>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Comparison</a>
                                 </li>
                                 <li class="nav-item">
-                                  <a class="nav-link" href="#">Data</a>
+                                    <a class="nav-link" href="#">Data</a>
                                 </li>
                             </ul>
                         </div>
                     </nav>
-              </div>
-          </div>
-          <div class = "row">
-                <div class = "col-md-8">
+                </div>
+            </div>
+          <div class = "row ww-row2">
+                <div class = "col-md-7 ww-content">
                         <h3>Latitude vs Wind Speed</h3>
-                        <img src = "https://github.com/LisaCannon/PythonAPIs/blob/master/Instructions/starter_code/City%20Latitude%20vs%20Wind%20Speed.png?raw=true"> 
+                        <hr>
+                        <img class = "img-full" alt = "scatter plot of latitude versus wind speed" src = "https://github.com/LisaCannon/PythonAPIs/blob/master/Instructions/starter_code/City%20Latitude%20vs%20Wind%20Speed.png?raw=true"> 
                         
                         <section>
-                          <p>
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                          </p>
-                          <br>
-                          <p>
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                          </p>
+                                <p>
+                                        There was no detectible relationship with latitude and wind speed.  The measure of wind speed appears to be uniformly distributed across at measures of latitude.
+                                    </p>
                       </section>
                     </div>
-                    <div class = "col-md-4">
-                          <h3>Visualizations</h3>
-                          <br>
-                          <img width = "50%" height = "50%" src = "https://github.com/LisaCannon/PythonAPIs/blob/master/Instructions/starter_code/City%20Latitude%20vs%20Max%20Temperature%20Polynomial%20Regression%20Fit.png?raw=true">
-                          <img width = "50%" height = "50%" src = "https://github.com/LisaCannon/PythonAPIs/blob/master/Instructions/starter_code/City%20Latitude%20vs%20Cloudiness.png?raw=true">
-                          <br>
-                          <img width = "20%" height = "20%" src = "https://github.com/LisaCannon/PythonAPIs/blob/master/Instructions/starter_code/City%20Latitude%20vs%20Humidity,%20Outlier%20Removed.png?raw=true">
-                          <img width = "20%" height = "20%" src = "https://github.com/LisaCannon/PythonAPIs/blob/master/Instructions/starter_code/City%20Latitude%20vs%20Wind%20Speed.png?raw=true"> 
-          
-                    </div>
+                <!-- This is the visualization block at the right side of most pages. -->
+                <div class = "col-md-1"></div>
+                <div class = "col-md-4 ww-content">
+                        <h3>Visualizations</h3>
+                        <hr>
+                        <img class = "img-smaller" alt="scatter plot of latitude versus temperature with a polynomial fit"  width = "45%" src = "https://github.com/LisaCannon/PythonAPIs/blob/master/Instructions/starter_code/City%20Latitude%20vs%20Max%20Temperature%20Polynomial%20Regression%20Fit.png?raw=true">
+                        <img class = "img-smaller" alt = "scatter plot of latitude versus cloudiness" width = "45%" src = "https://github.com/LisaCannon/PythonAPIs/blob/master/Instructions/starter_code/City%20Latitude%20vs%20Cloudiness.png?raw=true">
+                        <br>
+                        <img class = "img-smaller" alt = "scatter plot of latitude versus humidity" width = "45%" src = "https://github.com/LisaCannon/PythonAPIs/blob/master/Instructions/starter_code/City%20Latitude%20vs%20Humidity,%20Outlier%20Removed.png?raw=true">
+                        <img class = "img-smaller" alt = "scatter plot of latitude versus wind speed" width = "45%" src = "https://github.com/LisaCannon/PythonAPIs/blob/master/Instructions/starter_code/City%20Latitude%20vs%20Wind%20Speed.png?raw=true"> 
+
+                </div>
+            </div>
+            <!-- Footer for every page  -->
+            <div class = "row ww-footer">
+                <nav class="navbar">
+                    <span class="navbar-text">
+                        Latitude weather analysis by Lisa Cannon. 
+                    </span>
+                </nav>
             </div>
       </div>
     
