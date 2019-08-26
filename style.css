@@ -52,14 +52,15 @@ p {
     margin-top: 30px;
 }
 .ww-content {
-    /* background-color: white; */
     padding: 30px;
     margin-bottom: 30px;
+    background-color: white;
 }
 .white-box {
     background-color:white;
     padding: 30px;
     margin: 10px;
+    margin-bottom: 30px;
     
 }
 .img-full {
