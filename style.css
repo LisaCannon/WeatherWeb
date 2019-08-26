@@ -1,7 +1,6 @@
 .ww-home {
     font-size: 30px;
     text-align: left;
-    /* background-color: rgba(0, 102, 255, 0.938); */
     border-radius: 2px;
 }
 .body-color {
@@ -25,18 +24,23 @@
 .floated {
     float: left;
 }
-.ww-nav-menu {
+/* .ww-nav-menu {
     padding-right: 20px;
-}
+} */
 .ww-row1 {
     background-color: white;
     padding-bottom: 20px;
+    width: 100%;
 }
 h3 {
     color: rgba(0, 102, 255, 0.938);
     padding-bottom: 30px;
 }
 h4 {
+    color: rgba(0, 102, 255, 0.938);
+    padding-bottom: 20px;
+}
+h5 {
     color: rgba(0, 102, 255, 0.938);
     padding-bottom: 10px;
 }
@@ -48,12 +52,46 @@ p {
     margin-top: 30px;
 }
 .ww-content {
-    background-color: white;
+    /* background-color: white; */
     padding: 30px;
+    margin-bottom: 30px;
+}
+.white-box {
+    background-color:white;
+    padding: 30px;
+    margin: 10px;
+    
 }
 .img-full {
     padding: 30px;
 }
 .img-smaller {
     padding: 5px;
+    width: 45%;
 }
+
+/* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 480 pixels */
+@media (max-width: 767.98px) {
+    .img-smaller {
+        width: 20%;
+        padding: 2px;
+    }
+    /* .ww-home {
+        font-size: 20px;
+    } */
+    /* .ww-nav {
+        font-size: 12px;
+    } */
+    .ww-content {
+        padding: 10px;
+    }
+
+}
+/* @media (max-width: 576px) {
+    .ww-home {
+        font-size: 18px;
+    }
+    .ww-nav {
+        font-size: 8px;
+    }
+} */

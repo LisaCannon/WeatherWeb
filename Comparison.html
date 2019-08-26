@@ -13,74 +13,91 @@
   </head>
   <body class = "body-color">
       <div class = "container">
-            <div class = "row ww-row1">
-                    <div class = "col-md-2">
-                          <a class = "btn btn-primary ww-home" href = "#" role = "button">WeatherWeb</a>
-                    </div>
-                    <div class = "col-md-7"></div>
-                    <div class = "col-md-3">
-                          <nav class="navbar navbar-expand-lg navbar-light bg-light ww-nav">
-                              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                  <ul class="navbar-nav mr-auto">
-                                      <!-- <li class="nav-item active">
-                                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                                      </li> -->
-                                      <li class="nav-item dropdown">
-                                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                              Plots
-                                          </a>
-                                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                              <a class="dropdown-item ww-nav-menu" href="#">Temperature</a>
-                                              <a class="dropdown-item ww-nav-menu" href="#">Humidity</a>
-                                              <a class="dropdown-item ww-nav-menu" href="#">Cloudiness</a>
-                                              <a class="dropdown-item ww-nav-menu" href="#">Wind Speed</a>
-                                          </div>
-                                      </li>
-                                      <li class="nav-item">
-                                        <a class="nav-link" href="#">Comparison</a>
-                                      </li>
-                                      <li class="nav-item">
-                                        <a class="nav-link" href="#">Data</a>
-                                      </li>
-                                  </ul>
-                              </div>
-                          </nav>
-                    </div>
+          <!-- This is the navigation header that will be on every page. -->
+          <div class = "row ww-row1">
+                <div class = "col-md-2 col-sm-2">
+                      <a class = "btn btn-primary ww-home" href = "https://lisacannon.github.io/WeatherWeb" role = "button">WeatherWeb</a>
                 </div>
+                <div class = "col-md-7 col-sm-5"></div>
+                <div class = "col-md-3 col-sm-5">
+                      <nav class="navbar navbar-light ww-nav navbar-expand-sm d-flex justify-content-end">
+                          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarSupportedContent navbarTogglerDemo02">
+                              <ul class="navbar-nav mr-auto">
+                                  <li class="nav-item dropdown">
+                                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          Plots
+                                      </a>
+                                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                          <a class="dropdown-item ww-nav-menu" href="https://lisacannon.github.io/WeatherWeb/LatVsTemp">Temperature</a>
+                                          <a class="dropdown-item ww-nav-menu" href="https://lisacannon.github.io/WeatherWeb/LatVsCloud">Cloudiness</a>
+                                          <a class="dropdown-item ww-nav-menu" href="https://lisacannon.github.io/WeatherWeb/LatVsHumid">Humidity</a>
+                                          <a class="dropdown-item ww-nav-menu" href="https://lisacannon.github.io/WeatherWeb/LatVsWind">Wind Speed</a>
+                                      </div>
+                                  </li>
+  
+  
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="https://lisacannon.github.io/WeatherWeb/Comparison">Comparison</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="https://lisacannon.github.io/WeatherWeb/DataTable">Data</a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </nav>
+                </div>
+            </div>
+            
           <div class = "row ww-row2 ww-content">
-              <div class = "col">
+              <div class = "col-md-12">
                 <h3>Comparison</h3> 
+                <hr>
+                  <span>Click on an image to see more detail.</span>
+                  <br>
+                  <br>
               </div>
-          </div>
-          <div class = "row white-background">
-              <div class = "col">
-                  <p>Click on an image to see more detail.</p>
-              </div>
-          </div>
-          <div class = "row ww-content">
-                <div class="col">
-                    <h4>Latitude vs Temperature</h4>
-                    <img alt="scatter plot of latitude versus temperature with a polynomial fit" width= "40%" src = "https://github.com/LisaCannon/PythonAPIs/blob/master/Instructions/starter_code/City%20Latitude%20vs%20Max%20Temperature%20Polynomial%20Regression%20Fit.png?raw=true">
+                <div class="col-md-6 col-sm-12">
+                    <h5>Latitude vs Temperature</h5>
+                    <a href = "https://lisacannon.github.io/WeatherWeb/LatVsTemp">
+                        <img alt="scatter plot of latitude versus temperature with a polynomial fit" width= "80%" src = "https://github.com/LisaCannon/PythonAPIs/blob/master/Instructions/starter_code/City%20Latitude%20vs%20Max%20Temperature%20Polynomial%20Regression%20Fit.png?raw=true">
+                    </a>
                 </div>
-                <div class="col">
-                    <h4>Latitude vs Cloudiness</h4>
-                    <img  alt = "scatter plot of latitude versus cloudiness" width= "40%" src = "https://github.com/LisaCannon/PythonAPIs/blob/master/Instructions/starter_code/City%20Latitude%20vs%20Cloudiness.png?raw=true">
+                <div class="col-md-6 col-sm-12">
+                    <h5>Latitude vs Cloudiness</h5>
+                    <a ref = "https://lisacannon.github.io/WeatherWeb/LatVsCloud">
+                    <img  alt = "scatter plot of latitude versus cloudiness" width= "80%" src = "https://github.com/LisaCannon/PythonAPIs/blob/master/Instructions/starter_code/City%20Latitude%20vs%20Cloudiness.png?raw=true">
+                    </a>
                 </div>
                 <div class="w-100"></div>
-                <div class="col">
-                    <h4>Latitude vs Humidity</h4>
-                    <img alt = "scatter plot of latitude versus humidity" src = "https://github.com/LisaCannon/PythonAPIs/blob/master/Instructions/starter_code/City%20Latitude%20vs%20Humidity,%20Outlier%20Removed.png?raw=true">
+                <br>
+                <br>
+                <div class="col-md-6 col-sm-12">
+                    <h5>Latitude vs Humidity</h5>
+                    <a ref = "https://lisacannon.github.io/WeatherWeb/LatVsHumid">
+                        <img alt = "scatter plot of latitude versus humidity" width= "80%" src = "https://github.com/LisaCannon/PythonAPIs/blob/master/Instructions/starter_code/City%20Latitude%20vs%20Humidity,%20Outlier%20Removed.png?raw=true">
+                    </a>
                 </div>
-                <div class="col">
-                    <h4>Latitude vs Wind Speed</h4>
-                    <img alt = "scatter plot of latitude versus wind speed" src = "https://github.com/LisaCannon/PythonAPIs/blob/master/Instructions/starter_code/City%20Latitude%20vs%20Wind%20Speed.png?raw=true"> 
-    
+                <div class="col-md-6 col-sm-12">
+                    <h5>Latitude vs Wind Speed</h5>
+                    <a ref = "https://lisacannon.github.io/WeatherWeb/LatVsWind">
+                        <img alt = "scatter plot of latitude versus wind speed" width= "80%" src = "https://github.com/LisaCannon/PythonAPIs/blob/master/Instructions/starter_code/City%20Latitude%20vs%20Wind%20Speed.png?raw=true"> 
+                    </a>
                 </div>
             </div>
-            <div class = "row">
-
+            <!-- Footer for every page  -->
+            <div class = "row ww-footer">
+                <nav class="navbar">
+                    <span class="navbar-text">
+                        Latitude weather analysis by Lisa Cannon. 
+                    </span>
+                </nav>
             </div>
       </div>
-    
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
   </html>
